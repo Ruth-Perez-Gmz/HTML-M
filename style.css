@@ -1,0 +1,158 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+    background-color: rgb(255, 87, 51);
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo img {
+    height: 130px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 20px; /* Ajusta el espacio a la derecha de cada enlace */
+}
+
+nav a:hover {
+    color: white;
+}
+
+@media (max-width: 700px) { 
+    header {
+        flex-direction: column;
+        min-height: auto; /* Ajuste de altura minima para pantalals pequeñas */
+    }
+
+    nav {
+        padding: 10px 0; /* Ajuste de padding */
+    }
+}
+
+.contenedor-index {
+    display: flex;
+    flex-wrap: wrap; /* Se ajusta en pantallas pequeñas */
+    justify-content: space-around;
+    padding: 20px; /* Ajuste de padding */
+}
+
+.caja-index {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    text-align: center;
+}
+
+.caja-index img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caja-index img:hover {
+    transform: translateY(-10px); /* Desplaza la imagen hacia arriba (-) o hacia abajo (+) */
+    transition: transform 0.6s ease; /* Agrega una transición suave para el desplazamiento */
+    opacity: 0.8; /* Reduce la opacidad de la imagen cuando se coloca el cursor sobre ella */
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.caja {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen {
+    margin-right: 20px;
+    max-width: 200px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.columna {
+    flex: 1;
+}
+
+.columna h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.columna ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.columna ul li {
+    margin-bottom: 10px;
+}
+
+
+.titulo {
+    text-align: center; /* Centra el texto */
+    margin-top: 50px; /* Agrega un margen superior para separarlo del contenido anterior */
+}
+
+.titulo h1, h2 {
+    font-size: 48px; /* Aumenta el tamaño del título */
+    color: rgb(255, 87, 51); /* Cambia el color del título */
+}
+
+.titulo p {
+    font-size: 24px; /* Aumenta el tamaño del párrafo */
+    color: #333; /* Cambia el color del texto */
+}
+
+
+p {
+    font-size: 20px;
+    color: rgb(37, 37, 37);
+}
+
+footer {
+    background-color: whitesmoke; /* Cambia el color de fondo */
+    color: orangered; /* Cambia el color del texto */
+    padding: 20px;
+    text-align: center;
+    margin-top: 45px; /* Agrega un margen superior para separar el pie de página del último contenedor */
+}
+
+.footer-content {
+    max-width: 800px; /* Ajusta el ancho*/
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content a {
+    color: orangered; /* Cambia el color del enlace */
+    text-decoration: underline;
+}
+
+.footer-content a:hover {
+    color: black; /* Cambia el color del enlace al pasar el cursor sobre él */
+}
